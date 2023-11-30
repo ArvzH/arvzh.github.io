@@ -1,108 +1,384 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <title>Invitación</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <style>
-        body,
-        h1,
-        h2 {
-            font-family: "Raleway", sans-serif
-        }
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-        body,
-        html {
-            height: 100%
-        }
+        <title>BugBlocker</title>
 
-        p {
-            line-height: 2
-        }
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .bgimg,
-        .bgimg2 {
-            min-height: 100%;
-            background-position: center;
-            background-size: cover;
-        }
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        .bgimg {
-            background-image: url("./assets/bg1.jpg")
-        }
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        .bgimg2 {
-            background-image: url("./assets/bg2.jpg")
-        }
-    </style>
-</head>
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-<body>
+        <link href="css/templatemo-ebook-landing.css" rel="stylesheet">
+<!--
 
-    <!-- Header / Home-->
-    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-        <div class="w3-display-middle w3-text-white w3-center">
-            <h1 class="w3-jumbo">Baby Shower</h1>
-            <h2><b>03.06.2023</b></h2>
-        </div>
-    </header>
+TemplateMo 588 ebook landing
 
-    <!-- About  -->
-    <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
-        <div class="w3-content">
-            <h1 class="w3-center w3-text-grey"><b>Amelia & Victoria</b></h1>
-            <img class="w3-round w3-grayscale-min" src="./assets/mobil.png" style="width:12%;margin-left:45%;">
-            <p style="text-align: center;"><i>Estamos muy emocionados por la próxima llegada de nuestras bebés, queremos
-                    compartir esta alegría con nuestros seres queridos
-                    e invitarlos a nuestra celebración de baby shower.</i></p><br>
-            <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Ver
-                    detalles</a></p>
-        </div>
-    </div>
+https://templatemo.com/tm-588-ebook-landing
 
-    <!-- Background photo -->
-    <div class="w3-display-container bgimg2">
-        <div style="display: flex; justify-content: center;">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d234.79025297999166!2d-99.09680505828396!3d19.68518579431958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDQxJzA2LjciTiA5OcKwMDUnNDguNSJX!5e0!3m2!1ses-419!2smx!4v1684275734792!5m2!1ses-419!2smx"
-                width="600" height="450" style="margin-top: 10%;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+-->
+    </head>
+    
+    <body>
 
-    </div>
+        <main>
 
-    <!--Information -->
-    <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
-        <div class="w3-content">
-            <h1 class="w3-text-grey"><b></b></h1>
-            <img class="w3-round-large w3-grayscale-min" src="./assets/car.png" style="width:15%;margin-left: 0%;">
-            <div class="w3-row">
-                <div class="w3-half">
-                    <h2>Fecha:</h2>
-                    <p>03 de Junio 2023</p>
-                    <p>3:00 pm</p>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <!--<i class="navbar-brand-icon bi-book me-2"></i>-->
+                        <span>BugBlocker</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
+                            <i class="btn-icon bi-cloud-download"></i>
+                            <span>Download</span><!-- duplicated another one below for mobile -->
+                        </a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto me-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Inicio</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Info</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Producto</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">¿Qué contiene?</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
-                <div class="w3-half">
-                    <h2>Lugar:</h2>
-                    <p>Av. Prados Norte entre las calles Escorpión y Capriconio</p>
-                    <p>Unidad Morelos 3ra Secc. Tultitlán</p>
+            </nav>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0">
+
+                            <h6>Introduciendo BugBlocker</h6>
+
+                            <h3 class="text-white mb-4">Tu escudo contra los insectos, tu libertad sin preocupaciones.</h3>
+
+                            <a href="#section_2" class="btn custom-btn smoothscroll me-3">Descubre más</a>
+
+                            <a href="#section_4" class="link link--kale smoothscroll">Conoce el producto</a>
+                        </div>
+
+                        <div class="hero-image-wrap col-lg-6 col-12 mt-3 mt-lg-0">
+                            <img src="images/bugblocker.jpg" class="hero-image img-fluid" alt="education online books">
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- RSVP section -->
-    <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-        <h1>¡ESPERAMOS PUEDAN ACOMPAÑARNOS!</h1>
-        <p class="w3-large">Con cariño, Cristhofer y Andrea</p>
-    </div>
+            </section>
 
 
-    <div class="w3-hide-small" style="margin-bottom:32px"> </div>
+            <section class="featured-section">
+                <div class="container">
+                    <div class="row">
 
-</body>
+                        <div class="col-lg-8 col-12">
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+
+            <section class="py-lg-5"></section>
+
+
+            <section class="book-section section-padding" >
+                <div class="container">
+                    <div class="row">
+
+                        
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h6>¿Cuál es la importancia de usar repelentes para insectos?</h6>
+
+                            <p>El repelente forma parte del conjunto de medidas que deben tomarse para prevenir enfermedades transmitidas por insectos, entre las cuales se encuentran el dengue, zika y chikunguya.</p>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link smoothscroll" href="#item-1">Introducción</a>
+
+                                    <a class="nav-link smoothscroll" href="#item-2"> <strong>¿Qué es el dengue?</strong></a>
+
+                                    <a class="nav-link smoothscroll" href="#item-3"><strong>Síntomas</strong></a>
+
+                                    <a class="nav-link smoothscroll" href="#item-4"><strong>Prevención</strong></a>
+
+                                </nav>
+                            </nav>
+                        </div>
+
+                        <div class="col-lg-8 col-12">
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                <div class="scrollspy-example-item" id="item-1">
+                                    <h5>¿Cuándo debe emplearse?</h5>
+
+                                    <p>Se utiliza en situaciones en las cuales existe una alta densidad de mosquitos y se debe estar a la intemperie por un periodo de tiempo prolongado. Por el contrario, no es necesario utilizarlos en el interior de los hogares.</p>
+                                    <p><strong>Utilice los repelentes de forma segura</strong></p>
+
+                                    <blockquote class="blockquote">Lea la etiqueta y la información sobre el producto antes de usarlo</blockquote>
+
+                                </div>
+
+                                <div class="scrollspy-example-item" id="item-2">
+                                    <h5>¿Qué es el dengue?</h5>
+
+                                    <p>El dengue (fiebre quebrantahuesos) es una infección viral que se transmite de mosquitos a personas. Es más frecuente en las regiones de climas tropicales y subtropicales.</p>
+                                    <p> La mayoría de las personas que contraen dengue no tienen síntomas y en muchos de los casos, la persona se cura en una o dos semanas, pero a veces la enfermedad se agrava y requiere hospitalización.</p>
+                                    <p> En los casos más graves, el dengue puede ser mortal.</p>
+                                    <div class="row"> <!--centrar-->
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <img src="images/mosquito.jpg" class="scrollspy-example-item-image img-fluid" alt="">
+                                        </div>
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <img src="images/agua.jpg" class="scrollspy-example-item-image img-fluid" alt="">   
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Se puede reducir el riesgo de dengue protegiéndose de las picaduras, sobre todo durante el día.
+                                        </p>
+                                </div>
+
+                                <div class="scrollspy-example-item" id="item-3">
+                                    <h5>Síntomas</h5>
+
+                                    <p>El síntoma más común del dengue es la fiebre alta junto a cualquiera de los siguientes:</p>
+                                    <p>Náuseas, vómitos o sarpullido</p>
+                                    <p> Molestias y dolores (dolor de cabeza, dolor en los ojos, generalmente detrás de los ojos, dolor muscular, dolor en las articulaciones o dolor en los huesos)</p>
+                                    <p>Si cree que tiene dengue consulte a un proveedor de atención médica si presenta fiebre o cualquier otro síntoma</p>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-12">
+                                            <img src="images/fiebre.jpg" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <p>¡Protégete!</p>
+
+                                            <p><strong>Utilizar repelente al aire libre puede prevenir picaduras de mosquitos.</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="scrollspy-example-item" id="item-4">
+                                    <h5>Prevención</h5>
+                                    <h6>Para prevenir estas enfermedades es vital actuar contra el mosquito:</h6>
+                                    <p>Mantén limpios patios y azoteas.</p>
+
+                                    <p>Evita que se acomule agua en llantas, botes o latas. Si ya no los utilizas, tíralos.</p>
+
+                                    <p>Lava cada tercer día con jabón y cepillo: cubetas, piletas, cisternas, recipientes de alimentos de mascotas y floreros.</p>
+                                
+                                    <p>Tapa recipientes donde almacenes agua: botes, garrafones, jarras, tinacos.</p>
+
+                                    <p>Usa repelente de insectos varias veces al día, excepto en menores de 2 meses de vida. No lo apliques en ojos, manos, boca o piel irritada.</p>
+                                    <p>Cubre brazos y piernas, especialmente a primeras horas del día o anochecer.</p>
+                                    <p>Protege la cuna, carriola o cama con un pabellón antimosquitos.</p>
+                                    <p>Usa mosquiteros en puertas y ventanas.</p>
+                                    <p>Utiliza aire acondicionado de ser posible.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="author-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="images/familia.jpg" class="author-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                            <h6>Conoce BugBlocker</h6>
+
+                            <h2 class="mb-4">El mejor repelente para ti</h2>
+
+                            <p>BugBlocker es un repelente de origen natural.</p>
+
+                            <p>Es tu escudo confiable contra los insectos, garantizando tu tranquilidad en cada aventura al aire libre.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="reviews-section section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center mb-5">
+                            <h6>¿Qué contiene?</h6>
+
+                            <h2>BugBlocker está hecho de...</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="custom-block d-flex flex-wrap">
+                                <div class="custom-block-image-wrap d-flex flex-column">
+                                    <img src="images/ing2.jpg" class="img-fluid avatar-image" alt="">
+
+                                    <div class="text-center mt-3">
+                                        <strong class="d-block text-white">Materiales</strong>
+                                    </div>
+                                </div>
+
+                                <div class="custom-block-info">
+                                    <br>
+                                    <ul>
+                                        <li class="text-white">50 ml de alcohol</li>
+                                        <li class="text-white">50 ml de aceite corporal</li>
+                                        <li class="text-white">120 clavos de olor</li>
+                                    </ul>                                   
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 my-5 my-lg-0">
+                            <div class="custom-block d-flex flex-wrap">
+                                <div class="custom-block-image-wrap d-flex flex-column">
+                                    <img src="images/ing3.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
+
+                                    <div class="text-center mt-3">
+                                       <strong class="d-block text-white">Preparación</strong>
+                                    </div>
+                                </div>
+
+                                <div class="custom-block-info">
+                                    <ol class="text-white">
+                                        <li>Colocar los clavos en un recipiente hermético</li>
+                                        <li>Agregar 50 ml de alcohol</li>
+                                        <li>Agregar 50 ml de aceite corporal</li>
+                                    </ol>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="custom-block d-flex flex-wrap">
+                                <div class="custom-block-image-wrap d-flex flex-column">
+                                    <img src="images/ing5.jpg" class="img-fluid avatar-image" alt="">
+
+                                    <div class="text-center mt-3">                                   
+                                        <strong class="d-block text-white">Preparación</strong>
+                                    </div>
+                                </div>
+
+                                <div class="custom-block-info" >
+                                    <ol class="text-white" start="4">
+                                        <li>Mezclar</li>
+                                        <li>Dejar reposar de 3 a 5 días moviendo la mezcla periódicamente</li>
+                                        <li>Colar y envasar el producto</li>
+                                    </ol>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-section section-padding" id="section_5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-5 col-12 mx-auto">
+                            
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <h6 class="mt-5">Conócenos</h6>
+
+                            <h2 class="mb-4">Contacto</h2>
+
+                            <p class="mb-3">
+                                <i class="bi-geo-alt me-2"></i>
+                                Oaxaca, México
+                            </p>
+
+                            <p class="mb-2">
+                                <a href="tel: 010-020-0340" class="contact-link">
+                                    010-020-0340
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href="mailto:info@company.com" class="contact-link">
+                                    info@bugblocker.com
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
 </html>
